@@ -1,0 +1,52 @@
+cafe-url: 'https://cafe.naver.com/...' #카페 url
+code-length: 5 #인증코드 길이
+title-prefix: 'verify:' #게시글 제목 말머리
+user-permission: ncafeverify.usercommand
+admin-permission: ncafeverify.admincommand
+message:
+  privacy-message:
+    type: CHAT
+    message:
+      - '&c이 시스템은 사용자의 카페 가입 여부를 확인 등 여러 서비스를 위해 개인정보(네이버 아이디)을 수집, 저장 및 이용합니다.'
+      - '&c/카페인증 <네이버 ID> 명령어로 인증을 시작할 수 있습니다. (진행 시 개인정보 활용에 동의한 것으로 간주합니다)'
+  invalid-id:
+    type: CHAT
+    message:
+      - 'id의 형식이 올바르지 않습니다.'
+      - 'id는 5~20자의 영소문자와 숫자, 특수기호(_), (-)만 사용 가능합니다.' #네이버 id의 회원가입 시 규칙
+  already-complete:
+    type: ACTION_BAR
+    message:
+      - '&c이미 인증을 완료하셨습니다!'
+  already-process:
+    type: CHAT
+    message:
+      - '이미 인증이 진행중입니다. 게시글 제목 예시: %title%'
+  checking:
+    type: TITLE
+    message:
+      - '&a&l[카페인증]' #Title
+      - '&7확인 중입니다...' #Subtitle
+  success:
+    type: TITLE
+    message:
+      - '&a&l[카페인증]'
+      - '&a인증에 성공했습니다!'
+  fail:
+    type: CHAT
+    message:
+      - '&c인증을 실패했습니다.'
+  help:
+    type: CHAT
+    message:
+      - '&a/카페인증 <네이버 ID> &f명령어로 인증을 시작할 수 있습니다'
+  permission:
+    type: TITLE
+    message:
+      - '&c권한이 없습니다.'
+  start:
+    type: CHAT
+    message:
+      - '인증을 시작합니다.'
+      - '카페에 접속 후 인증 게시판에 %title% 라는 제목으로 게시글을 작성한 뒤'
+      - '&a/카페인증 &f명령어를 사용해주세요.'

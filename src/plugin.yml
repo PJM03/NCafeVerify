@@ -1,0 +1,11 @@
+name: NCafeVerify
+main: pic_e.ncafeverify.NCafeVerifyPlugin
+version: 1.0.0
+author: Pic_E
+softdepend: [ Skript ]
+
+commands:
+  카페인증:
+    aliases: [ zkvpdlswmd ]
+  인증관리:
+    aliases: [ dlswmdrhksfl ]
